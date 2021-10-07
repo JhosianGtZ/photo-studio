@@ -1,0 +1,403 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --background: #222831;
+    --primary: #F05454;
+    --text: #DDDDDD;
+    --dark-blue: #30475E;
+    --white: #f4f4f4;
+}
+
+body {
+    background-color: var(--background);
+    font-family: 'Lato', sans-serif;
+    color: var(--white);
+}
+
+.contenedor {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 60px 0;
+}
+
+/* Header */
+.menu-nav {
+    text-align: right;
+    padding: 0;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.menu-nav a {
+    display: inline-block;
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 1rem;
+    margin-top: 40px;
+}
+
+.menu-nav a:hover {
+    color: var(--primary);
+
+}
+
+.header {
+    width: 100%;
+    background-image:
+        linear-gradient(to top, rgba(9, 32, 63, 0.7) 0%, rgba(83, 120, 149, 0.7) 100%),
+        url('../images/daniil-onischenko-iMk2DOZ__XU-unsplash.jpg');
+
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+.hero {
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 55px;
+    font-weight: 600;
+}
+
+.contenedor-textos {
+    padding-bottom: 100px;
+}
+
+.copy {
+    font-size: 24px;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Menu */
+
+.seccion-1 {
+    padding-top: 30px;
+}
+
+.titulo-seccion {
+    font-family: 'Lexend Deca'sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary);
+    padding-bottom: 60px;
+    text-transform: uppercase;
+}
+
+.titulo-seccion b {
+    color: var(--text);
+}
+
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.ilustracion {
+    border-radius: 9px;
+    width: 50%;
+    background-color: var(--dark-blue);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
+.relatos {
+    width: 40%;
+}
+
+.relato {
+    margin-bottom: 30px;
+}
+
+.n-relato {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 25px;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.portafolio {
+    background-color: var(--dark-blue);
+}
+
+.portafolio-contenedor {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-contenedor {
+    width: 31%;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+.imagen-contenedor img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.imagen-contenedor img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Pricing */
+
+.table-pricing {
+    display: flex;
+    height: 600px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pricing {
+    width: 30%;
+    text-align: center;
+    background-color: var(--dark-blue);
+    height: 500px;
+    border-radius: 9px;
+    padding: 50px 10px;
+    overflow: hidden;
+    transition: .5s ease-in;
+}
+
+.active {
+    background-color: var(--primary);
+    transform: scale(1.1);
+}
+
+.name-pricing {
+    font-family: 'Lexend Deca';
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.price {
+    font-size: 22px;
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+
+
+.benefits {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    border-bottom: 1px dotted var(--text);
+    padding-bottom: 5px;
+}
+
+.pricing:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.cta {
+
+    margin-top: 1rem;
+    font-weight: normal;
+    text-align: center;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    color: var(--text);
+    background: none;
+    text-decoration: none;
+    border: 1px solid var(--text);
+    transition: .5s ease-out;
+}
+
+.cta:hover {
+    background-color: var(--text);
+    color: var(--dark-blue);
+    transform: translateY(-5px);
+}
+
+/* Footer */
+
+footer {
+    position: relative;
+    background-color: var(--dark-blue);
+}
+
+footer .wave {
+    top: 0;
+    left: 0;
+
+}
+
+footer .titulo-seccion {
+    color: var(--white);
+    margin-top: 3rem;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid var(--text);
+    background: none;
+    font-size: 1rem;
+    font-weight: 300;
+    outline: none;
+    padding: 20px 10px;
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 48%;
+}
+
+textarea {
+    max-width: 100%;
+    min-width: 100%;
+    resize: none;
+}
+
+.submit {
+    background-color: var(--white);
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin: 0;
+    padding: 15px 0;
+    width: 120px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: .5s ease-in;
+}
+
+.submit:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    transform: translateY(-5px);
+}
+
+/* Responsive Design */
+
+@media screen and (max-width:800px) {
+    .relato{
+        text-align: center;
+    }
+    .imagen-contenedor{
+        width: 47%;
+    }
+
+    .pricing h3{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:750px) {
+
+    .menu-nav {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 45px;
+    }
+
+
+    .titulo-seccion {
+        font-size: 28px;
+    }
+
+    .contenedor-sobre-nosotros {
+        justify-content: center;
+    }
+
+    .relato {
+        text-align: center;
+    }
+
+    .relatos {
+        width: 80%;
+    }
+
+    .ilustracion {
+        width: 80%;
+        margin-bottom: 2rem;
+    }
+
+    .imagen-contenedor {
+        width: 100%;
+    }
+
+    .table-pricing {
+        height: auto;
+
+    }
+
+    .pricing {
+        width: 80%;
+        margin-bottom: 2.5rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:350px) {
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .copy {
+        font-size: 20px;
+    }
+
+    .relato {
+        text-align: center;
+    }
+
+    .pricing {
+        width: 80%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="submit"] {
+        width: 100%;
+    }
+}
