@@ -85,11 +85,11 @@ Users should be able to:
 
   
 
-![Desktop Screenshot](./images/Desktop-screenshot.png)
+![Desktop Screenshot](./images/screenshot-d.png)
 
   
 
-![Mobile Screenshot](./images/Mobile-screenshot.png)
+![Mobile Screenshot](./images/screenshot-m.png)
 
   
 
